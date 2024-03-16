@@ -4,9 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css"/ >
-    <title>Friedns-Kokoa clone</title>
+    <title>Chat - Kokoa clone</title>
   </head>
-  <body>
+  <body id="chat-screen">
     <div class="status-bar">
       <div class="status-bar__column">
         <span>No Service</span>
@@ -22,60 +22,58 @@
       </div>
     </div>
 
-    <header class="screen-header">
-      <h1 class="screen-header__title">Chats</h1>
-      <div class="screen-header__icons">
-      <span> <i class="fas fa-search fa-lg"></i></span>
-      <span><i class="fa-regular fa-comment-dots fa-lg"></i></span>
-      <span><i class="fas fa-music fa-lg"></i></span>
-      <span><i class="fas fa-cog fa-lg"></i></span>
-    </div>
+    <header class="alt-header">
+      <div class="alt-header__column">
+        <a href="chats.html">
+          <i class="fa-solid fa-angle-left fa-3x"></i>
+        </a>
+      </div>
+      <div class="alt-header__column">
+        <h1 class="alt-header__title">Iggy</h1>
+      </div>
+      <div class="alt-header__column">
+        <span><i class="fas fa-search fa-lg"></i></span>
+        <span><i class="fa-solid fa-bars fa-lg"></i></span>
+      </div>
     </header>
- 
-    <main class="main-screen">
-      <div class="user-component">
-        <div class="user-component__column">
-          <img src="img/DSC_1555.jpg" class="user-component__avatar user-component__avatar"/>
-          <div class="user-component__text">
-            <h4 class="user-component__title">Ignacio</h4>
-            <h6 class="user-component__subtitle">
-              Please check My Kokoa Account Info 
-            </h6>
+
+    <main class="main-screen main-chat">
+      <div class="chat__timestamp">
+      Tuesday, March 16, 2024
+      </div>
+      <div class="message-row">
+        <img src="img/DSC_1555.jpg" />
+        <div class="message-row__content">
+          <span class="message__author">Ignacio</span>
+          <div class="message__info">
+            <span class="message__bubble">Hi!</span>
+            <span class="message__time">18:04</span>
           </div>
         </div>
-        <div class="user-component__column">
-          <span class="user-component__time">21:22</span>
-          <div class="badge">1</div>
+      </div>
+      
+      <div class="message-row message-row__own">
+        <div class="message-row__content">
+          <div class="message__info">
+            <span class="message__bubble">Hi nice to meet you!</span>
+            <span class="message__time">18:05</span>
+          </div>
         </div>
       </div>
     </main>
 
-    <nav class="nav">
-      <ul class="nav__list">
-        <li class="nav__btn">
-          <a class="nav__link" href="friends.html">
-            <i class="fa-regular fa-user fa-2x"></i>
-          </a>
-        </li>
-        <li class="nav__btn">
-          <a class="nav__link" href="chat.html">
-            <span class="nav__notification badge">1</span>
-            <i class="fa-solid fa-comment fa-2x"></i>
-          </a>
-        </li>
-        <li class="nav__btn">
-          <a class="nav__link" href="find.html">
-            <i class="fas fa-search fa-2x"></i>
-          </a>
-        </li>
-        <li class="nav__btn">
-          <a class="nav__link" href="more.html">
-            <span class="nav-ellipsis__notification"></span>
-            <i class="fas fa-ellipsis-h fa-2x"></i>
-          </a>
-        </li>
-      </ul>
-    </nav>
+    <form class="reply">
+      <div class="reply__column">
+        <i class="far fa-plus-square fa-lg"></i>
+      </div>
+      <div class="reply__column">
+        <input type="text" placeholder="Write a message..." />
+        <i class="far fa-smile-wink"></i>
+        <button>
+          <i class="fas fa-arrow-up"></i>
+        </button>
+      </div>
+    </form>
 
     <script src="https://kit.fontawesome.com/83dcf21612.js" crossorigin="anonymous"></script>
   </body>
