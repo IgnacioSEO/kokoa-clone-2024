@@ -21,8 +21,7 @@ While creating a mock server with Node JS, there was no undestanding about using
   * Componentisation of HTML and CSS
 
 ## Used
-<img src="https://img.shields.io/badge/Html-E34F26?style=flat&logo=html5&logoColor=white">
-<img src="https://img.shields.io/badge/CSS-1572B6?style=flat&logo=css3&logoColor=white">
+<img src="https://img.shields.io/badge/Html-E34F26?style=flat&logo=html5&logoColor=white"> <img src="https://img.shields.io/badge/CSS-1572B6?style=flat&logo=css3&logoColor=white">
 
 ## References
 https://nomadcoders.co  
